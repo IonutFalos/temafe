@@ -1,0 +1,17 @@
+img {
+    float:left;
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+  }
+  h1 {
+    color:red;
+    position: relative;
+    left: 30px;    
+   }
+   h2 {
+    background-color: rgb(196, 192, 192);
+    color: red;
+    position: relative;
+    left: 30px;
+   }
