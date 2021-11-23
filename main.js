@@ -38,7 +38,6 @@ let place = ' her bank acount'
 
 console.log(person + ' has' + money + ' in' + place + '.')
 
-let $12,450 = ' is a lot of money'
 
 console.log(money + $12,450)
 
