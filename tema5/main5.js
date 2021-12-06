@@ -1,5 +1,5 @@
-let mypopup = 'My First Heading'
-alert(mypopup)
+// let mypopup = 'Myz First Heading'
+alert('apasa');
 
 // moving the h1 content
 var a = document.getElementById("h1").innerHTML;
