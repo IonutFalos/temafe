@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    position: relative;
+}
+
+<<<<<<< HEAD:tema1/main.css
+#popup {
+    position: fixed;
+    top: 10%;
+    bottom: 10%;
+    left: 50px;
+    right: 50px;
+    border-style: solid;
+    background-color: beige;
+}
+
+#popup .popupHeader {
+
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#popup .headerClose {
+    padding: 3px 10px 3px 10px;
+    cursor: pointer;
+}
+=======
+#meniuTema {
+    padding: 0 50px 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+>>>>>>> 8edf239391aa27a887e16eea015e9f419e09b31b:main.css
+a {
+    cursor: pointer;
+}
+
+#header {
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+#header h1 {
+    color: white;
+}
+
+#menu a {
+    margin: 0 5px 0 5px;
+}
+
+#content {
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contentTile {
+    height: 100px;
+    width: 150px;
+    background-color: lightgreen;
+    margin: 20px;
+}

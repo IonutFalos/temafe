@@ -1,0 +1,12 @@
+body {
+    color: black;
+}
+
+#columns {
+  display: flex;
+  flex-direction: column;
+}
+
+#c2 {
+  color: blue;
+}

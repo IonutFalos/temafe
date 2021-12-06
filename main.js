@@ -28,7 +28,7 @@ persoana = persoana + ' goia';
 
 console.log(persoana);
 
-alert(persoana);
+// alert(persoana);
 
 let person = 'Jane Smith'
 
