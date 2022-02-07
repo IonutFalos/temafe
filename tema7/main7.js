@@ -1,12 +1,3 @@
-// let consomonautiInit = function() {
-//     console.log('Salut init functie');
-
-//     axios.get('https://api.spacexdata.com/v4/crew', {})
-//     .then(function (response) {
-//         console.log(response);
-//     }); 
-// };
-
 function numberFunction() {
     let number = prompt("Please enter your number");
     if (number != null) {
@@ -14,3 +5,16 @@ function numberFunction() {
       "You typed " + number + "! This is you lucky number!";
     }
   }
+
+let cars = [
+  ["Saab", 1],
+  ["Volvo", 2],
+  ["BMW", 3]
+];
+
+console.log (cars[0][1]);
+
+document.getElementById("demo").innerHTML = cars;
+
+document.getElementById("demo").innerHTML =
+Math.floor(Math.random() * 10);

@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    position: relative;
+}
+
+body > div {
+    max-width: 1000px;
+    margin: auto;
+}
+
+a {
+    cursor: pointer;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+#header h1 {
+    color: white;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contentTile {
+    aspect-ratio: 5 / 3;
+}
+
+.contentTileCore h4 {
+    color: darkblue;
+}
+
+@media only screen and (min-width: 801px) {
+    .contentTile {
+        width: 33.3%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .contentTile {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .contentTile {
+        width: 100%;
+    }
+}
+
+.contentTileCore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin: 10px;
+    background-color: lightgrey;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+}
+
+#menu {
+    height: 24px;
+    display: flex;
+}
+
+#menu > a {
+    align-self: center;
+    text-decoration: none;
+    color: inherit;
+    padding: 3px 6px 3px 6px;
+    opacity: 0.5;
+}
+
+#menu > a.selected {
+    opacity: 1;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    border-style: solid;
+    background-color: white;
+}
+
+.popup .headerClose {
+    padding: 3px 10px 3px 10px;
+    cursor: pointer;
+}
+
+.popup .popupHeader {
+    display: flex;
+    flex-direction: row-reverse;
+}

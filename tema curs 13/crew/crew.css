@@ -1,0 +1,45 @@
+#header {
+    background-color: cadetblue;
+}
+
+#crewPopup {
+    top: 10%;
+    bottom: 10%;
+    left: 50px;
+    right: 50px;
+}
+
+#crewPopup .popupContent {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: calc(100% - 24px);
+}
+
+.galleryItem {
+    width: 200px;
+    height: 300px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.galleryItem > .imageContainer {
+    width: 100%;
+    height: calc(100% - 25px);
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.galleryItem > span {
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer > img {
+    width: 100%;
+    aspect-ratio: initial;
+}

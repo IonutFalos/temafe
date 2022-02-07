@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>SpaceX Info Site - Home</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="home/home.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="home/initalize.js" defer></script>
+        <script src="main.js" defer></script>
+    </head>
+
+    <body>
+      <div id="header">
+        <h1>SpaceX Info Site - Home &#x1F601;</h1>
+      </div>
+      <div id="menu">
+        <a class="selected" href="index.html">Home</a>
+        <a href="launches.html">Launches</a>
+        <a href="crew.html">Crew</a>
+      </div>
+      <div id="content">
+        <div id="homeMap"></div>
+      </div>
+    </body>
+</html>
