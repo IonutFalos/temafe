@@ -2,7 +2,7 @@
     background-color: cadetblue;
 }
 
-#crewPopup {
+#crewPopup, #photoMembersPopup {
     top: 10%;
     bottom: 10%;
     left: 50px;

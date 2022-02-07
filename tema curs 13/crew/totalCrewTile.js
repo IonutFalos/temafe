@@ -11,6 +11,17 @@ let totalCrewTile = {
             let ourPopup = document.getElementById('crewPopup');
             ourPopup.style.display = 'none';
         });
+
+        let photoMembersPopup = document.getElementById('photoMembersPopup');
+        photoMembersPopup.style.display = 'block';
+    
+        let membersCloseButtons = document.querySelectorAll('#photoMembersPopup .headerClose');
+        let photoMembersCloseButton = membersCloseButtons[0];
+        photoMembersCloseButton.addEventListener('click', function() {
+    
+            let membersPopup = document.getElementById('photoMembersPopup');
+            membersPopup.style.display = 'none';
+        });
     },
 
     render: function() {
@@ -18,6 +29,7 @@ let totalCrewTile = {
         let data = crewData.allCrew;
 
         let parentContainer = document.querySelector('#crewPopup .popupContent');
+        let crewMembersContainer = document.querySelector('#crewMembersPopup .popupContent');
     
         for (let i = 0; i < data.length; i++) {
             let theCosmounaut = data[i];
@@ -28,7 +40,18 @@ let totalCrewTile = {
             galleryItem.setAttribute('data-gallery-item-id', theCosmounaut.id);
             galleryItem.addEventListener('click', function(event) {
                 let crewId = event.currentTarget.getAttribute('data-gallery-item-id');
-                alert('Our selected crew member has the ID of: ' + crewId);
+                
+                for (let i = 0; i < data.length; i++) {
+                    let aCrewMember = data[i];
+                    let selectedId = aCrewMember.id;
+                    crewMembersContainer.appendChild(aCrewMember);
+                    
+                    if (
+                        aCrewMember = selectedId
+                    ) {
+                        aCrewMember = aCrewMember.image;        
+                    }
+                }
             });
 
             let imageContainer = document.createElement('div');
@@ -45,7 +68,9 @@ let totalCrewTile = {
             galleryItem.appendChild(label);
 
             parentContainer.appendChild(galleryItem);
+
         }
+     
     }
 
 };
