@@ -39,14 +39,15 @@ let totalCrewTile = {
             galleryItem.classList.add('galleryItem');
             galleryItem.setAttribute('data-gallery-item-id', theCosmounaut.id);
             galleryItem.addEventListener('click', function(event) {
-                let crewId = event.currentTarget.getAttribute('data-gallery-item-id');
+                let selectedId = event.currentTarget.getAttribute('data-gallery-item-id');
                 
                 for (let i = 0; i < data.length; i++) {
-                    let aCrewMember = data[i];
-                    let selectedId = aCrewMember.id;
-                    crewMembersContainer.appendChild(aCrewMember);
-                    
+                    let aCrewMember = data[i].id;
+                  
                     if (
+                        let singleCrewMemberDiv = document.createElement('div');
+                        crewMembersContainer.innerHTML = '';
+                        crewMembersContainer.appendChild(singleCrewMemberDiv);
                         aCrewMember = selectedId
                     ) {
                         aCrewMember = aCrewMember.image;        
