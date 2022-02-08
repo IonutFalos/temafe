@@ -11,9 +11,6 @@ let totalCrewTile = {
             let ourPopup = document.getElementById('crewPopup');
             ourPopup.style.display = 'none';
         });
-
-        let photoMembersPopup = document.getElementById('photoMembersPopup');
-        photoMembersPopup.style.display = 'block';
     
         let membersCloseButtons = document.querySelectorAll('#photoMembersPopup .headerClose');
         let photoMembersCloseButton = membersCloseButtons[0];
@@ -39,18 +36,23 @@ let totalCrewTile = {
             galleryItem.classList.add('galleryItem');
             galleryItem.setAttribute('data-gallery-item-id', theCosmounaut.id);
             galleryItem.addEventListener('click', function(event) {
+
+                let container = document.querySelector('#photoMembersPopup');
+                let containerContent = document.querySelector('#photoMembersPopup .popupContent');
+                container.style.display = 'block';
+
                 let selectedId = event.currentTarget.getAttribute('data-gallery-item-id');
                 
                 for (let i = 0; i < data.length; i++) {
-                    let aCrewMember = data[i].id;
+                    let aCrewMemberId = data[i].id;
                   
                     if (
-                        let singleCrewMemberDiv = document.createElement('div');
-                        crewMembersContainer.innerHTML = '';
-                        crewMembersContainer.appendChild(singleCrewMemberDiv);
-                        aCrewMember = selectedId
+                        aCrewMemberId === selectedId
                     ) {
-                        aCrewMember = aCrewMember.image;        
+                        let singleCrewMemberImg = document.createElement('img');
+                        singleCrewMemberImg.src = data[i].image;
+                        containerContent.innerHTML = '';
+                        containerContent.appendChild(singleCrewMemberImg);       
                     }
                 }
             });
